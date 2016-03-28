@@ -57,7 +57,7 @@ class KebiaoReader(ExcelReader):
         table_name = "s-" + semester
         # print semester,"/",lab_room,"/",table_name
         try:
-            conn =MySQLdb.connect(host="127.0.0.1",user="root",passwd="password",db="syweb",charset="utf8")
+            conn =MySQLdb.connect(host="127.0.0.1",user="root",passwd="aux1118xml",db="syweb",charset="utf8")
             cur = conn.cursor()
             for item in self.iterator():
                 item.printMe()
